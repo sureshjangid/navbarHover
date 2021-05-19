@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/80f31deb85.js" crossorigin="anonymous"></script>
+
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:wght@800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+#logo {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  top: 0;
+  left: 50px;
+}
+
+ul {
+ 
+  display: flex;
+           justify-content: center;
+}
+
+ul li {
+  list-style: none;
+  -webkit-transform: translate(250px, -63px);
+          transform: translate(250px, -63px);
+}
+
+ul li a {
+  text-decoration: none;
+  margin: 15px;
+  color: orangered;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+ ul li a:before {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 20px;
+  width: 0;
+  height: 2px;
+  border-bottom: 2px solid orangered;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+a:hover::before {
+  width: 70%;
+}
+
+a:hover {
+  color: white;
+}
+.checkbtn{
+  color: white;
+  line-height: 80px;
+  font-size: 18px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+@media (max-width:768px) {
+  .checkbtn{
+    display: block;
+  }
+  nav ul {
+   position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+    top: 80px;
+  }
+  li{
+    transform: translate(12px, 55px) !important;
+    width: 100px;
+  }
+}
+
+    </style>
+
+<nav>
+ <input type="checkbox" id="check">
+ <label for="check" class="checkbtn">
+   <i class="fas fa-bars"></i>
+ </label>
+
+    <div class="logoPic"></div>
+    <img src="logo3.png" alt="Logo of Website" id="logo">
+</div>
+    <ul>
+        <li><a class="list" href="">Home</a></li>
+        <li><a class="list" href="#offers">what do we offer</a></li>
+        <li><a class="list" href="#offers"> my skills </a></li>
+        <li><a class="list" href="#about">about me</a></li>
+        <li><a class="list" href="#imgGallerys"> my designe </a></li>
+        <li><a class="list" href="#blackForms">contact</a></li>
+    </ul>
+    </nav>
+
+
+    </script>
+</body>
+</html>
